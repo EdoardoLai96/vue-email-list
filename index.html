@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="email in email_container">
+            <li v-if="email_container.length >= 10" v-for="email in email_container">
                 {{email}}
             </li>
         </ul>
